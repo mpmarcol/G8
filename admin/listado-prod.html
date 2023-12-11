@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FUNKOSHOP | Ingreso Administrador</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="./css/listado-productos.css">
+</head>
+
+<body>
+   <div id="header-admin"></div>
+
+   <main>
+      <div class="listado">
+         <div class="list-buscador">
+            <div class="list-bsc-img"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="list-bsc-inp">
+               <input type="text" id="searchInput" placeholder="código, nombre o categoría..">
+            </div>
+         </div>
+         <div class="list-titulo">
+            <h1>LISTADO DE PRODUCTOS</h1>
+            <div class="list-ttl-agregar">
+               <p>AGREGAR</p>
+               <i class="fa-solid fa-square-plus"></i>
+            </div>
+         </div>
+         <table id="dataTable">
+            <thead>
+               <tr>
+                  <th class="lst-tab-col1">ID</th>
+                  <th class="lst-tab-col2">Código</th>
+                  <th class="lst-tab-col3">Nombre del Producto</th>
+                  <th class="lst-tab-col4">Categoría</th>
+                  <th class="lst-tab-col5">Editar</th>
+                  <th class="lst-tab-col6">Borrar</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td class="lst-tab-col1">1</td>
+                  <td class="lst-tab-col2">STW001001</td>
+                  <td class="lst-tab-col3">Baby Yoda Blueball</td>
+                  <td class="lst-tab-col4">STAR WARS</td>
+                  <td class="lst-tab-col5">
+                     <span class="edit-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                     </span>
+                  </td>
+                  <td class="lst-tab-col6">
+                     <span class="erase-icon">
+                        <i class="fas fa-trash-alt"></i>
+                     </span>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="lst-tab-col1">2</td>
+                  <td class="lst-tab-col2">456</td>
+                  <td class="lst-tab-col3">Product 2</td>
+                  <td class="lst-tab-col4">Category 2</td>
+                  <td class="lst-tab-col5">
+                     <span class="edit-icon"><i class="fas fa-pencil-alt"></i></span>
+                  </td>
+                  <td class="lst-tab-col6">
+                     <span class="erase-icon"><i class="fas fa-trash-alt"></i></span>
+                  </td>
+               </tr>
+               <!-- Add more rows as needed -->
+            </tbody>
+         </table>
+      </div>
+
+   </main>
+
+   <div id="footer-admin"></div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+   </script>
+
+   <script>
+      // Use JavaScript to load the header.html file and insert it into the page
+      fetch('./header-admin.html')
+         .then(response => response.text())
+         .then(data => {
+            const headerContainer = document.getElementById('header-admin');
+            headerContainer.innerHTML = data;
+         });
+      // Use JavaScript to load the footer file and insert it into the page
+      fetch('./footer-admin.html')
+         .then(response => response.text())
+         .then(data => {
+            const headerContainer = document.getElementById('footer-admin');
+            headerContainer.innerHTML = data;
+         });
+
+         // ***************************************************
+         // codigo para buscar en la tabla
+   </script>
+   <script>
+      const searchInput = document.getElementById('searchInput');
+      const dataTable = document.getElementById('dataTable');
+      const rows = dataTable.getElementsByTagName('tr');
+
+      searchInput.addEventListener('input', () => {
+         const searchValue = searchInput.value.toLowerCase();
+
+         for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            let found = false;
+
+            for (let j = 0; j < cells.length; j++) {
+               const cellValue = cells[j].textContent.toLowerCase();
+
+               if (cellValue.indexOf(searchValue) > -1) {
+                  found = true;
+                  break;
+               }
+            }
+
+            rows[i].style.display = found ? '' : 'none';
+         }
+      });
+
+      // ******************************************************
+      // traer los datos de la tabla desde un csv
+      // ******************************************************
+
+
+      const searchInput = document.getElementById('searchInput');
+      const dataTable = document.getElementById('dataTable');
+
+      // Load CSV data
+      fetch('data.csv')
+         .then(response => response.text())
+         .then(csvData => {
+            const rows = csvData.split('\n');
+
+            for (let i = 0; i < rows.length; i++) {
+               const rowData = rows[i].split(',');
+
+               const row = document.createElement('tr');
+               for (let j = 0; j < rowData.length; j++) {
+                  const cell = document.createElement(i === 0 ? 'th' : 'td');
+                  cell.textContent = rowData[j];
+                  row.appendChild(cell);
+               }
+
+               dataTable.appendChild(row);
+            }
+         })
+         .catch(error => {
+            console.error('Error:', error);
+         });
+
+      // Add search functionality
+      searchInput.addEventListener('input', () => {
+         const searchValue = searchInput.value.toLowerCase();
+         const rows = dataTable.getElementsByTagName('tr');
+
+         for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            let found = false;
+
+            for (let j = 0; j < cells.length; j++) {
+               const cellValue = cells[j].textContent.toLowerCase();
+
+               if (cellValue.indexOf(searchValue) > -1) {
+                  found = true;
+                  break;
+               }
+            }
+
+            rows[i].style.display = found ? '' : 'none';
+         }
+      });
+
+   </script>
+</body>
+
+<h1>0</h1>
+
+</html>

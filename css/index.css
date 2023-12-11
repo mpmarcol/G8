@@ -1,0 +1,330 @@
+@import url("./estandar.css");
+
+body {
+  /* background-color: var(--dark-bg-solid); */
+
+  a {
+    text-decoration: none;
+  }
+
+  ul, ol {
+    list-style-type: none;
+  }
+}
+
+header {
+  background-color: var(--dark-bg-solid);
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 1200px;
+  height: 144px;
+
+  /* margin: 0 120px; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.hd_logo {
+  max-width: 300px;
+}
+
+.hd_menu_li {
+  width: 406px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  list-style-type: none;
+  
+  justify-content: space-between;
+}
+
+.hd_menu_li li {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.banner {
+  height: 388px;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+
+  background-image: url("../img/funkos-banner-160.jpg");
+}
+
+.ban_textos {
+  width: 400px;
+  height: 168px;
+
+  margin-left: 108px;
+  /* margin-top: 108px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  h3 {
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  p {
+    margin-top: 8px;
+
+    font-family: var(--alternative-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 216px;
+    height: 48px;
+    margin-top: 48px;
+    border-radius: 48px;
+
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+
+    background-color: white;
+  }
+}
+
+.card {
+  width: 1200px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_textos {
+  width: 720px;
+  height: 300px;
+
+  h3 {
+    width: 480px;
+
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  p {
+    /* margin: 6px 176px 0px 0; */
+    padding-bottom: 24px;
+
+    font-family: var(--alternative-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    border-bottom: red solid 2px;
+  }
+
+  a {
+    width: 300px;
+    height: 64px;
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    background-color: black;
+    border-radius: 32px;
+
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+.card:nth-child(2) .card_img {
+  order: -1;
+}
+
+.hero {
+  width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  ul {
+    width: 1200px;
+    height: 512px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li {
+    width: 360px;
+    height: 512px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .her_img {
+    height: 352px;
+
+    position: relative;
+
+    /* display: block; */
+
+    p {
+      position: absolute;
+      width: 96px;
+      height: 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: var(--alternative-font);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+
+      background-color: red;
+      color: white;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  h4 {
+    font-family: var(--base-font);
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .her_collec {
+    margin-bottom: 13px;
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .her_price {
+    margin-bottom: 13px;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .her_cuotas {
+    margin-bottom: 13px;
+    color: #1d84b5;
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+
+footer {
+  width: 1200px;
+  height: 348px;
+
+  background-color: var(--dark-bg-solid);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--alternative-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+
+  p {
+    margin: 23px auto;
+  }
+}
+
+.ftr_arriba {
+  /* margin-top: 108px; */
+  /* margin-bottom: 54px; */
+
+  display: flex;
+  flex-direction: row;
+  gap: 660px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.ftr_menu {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+    justify-content: space-between; */
+
+  ul {
+    width: 116px;
+    height: 92px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    list-style-type: none;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}

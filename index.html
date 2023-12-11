@@ -5,14 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funkoshop</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="hd_img">
+    <header class="">
+        <nav class="header contenedor">
+            <div class="hd_logo">
                 <picture>
-                    <a href="./home.html">
+                    <a href="./index.html">
                         <img src="./img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop" />
                     </a>
                 </picture>
@@ -40,8 +41,8 @@
 
     <!-- ===== comienza cuerpo ===== -->
     <main>
-        <section>
-            <article>
+        <section class="banner contenedor">
+            <article class="ban_textos">
                 <h3>Nuevos Ingresos</h3>
                 <p>Descubrí el próximo Funko Pop de tu colección</p>
                 <a href="./pages/shop.html">SHOP</a>
@@ -49,8 +50,8 @@
         </section>
 
         <div>
-            <section>
-                <article>
+            <section class="card contenedor">
+                <article class="card_textos">
                     <h3>STAR WARS &<br>THE MANDALORIAN</h3>
                     <p>
                         Disfrutá de una saga que sigue agregando<br>
@@ -58,55 +59,55 @@
                     </p>
                     <a href="./pages/coleccion.html">VER COLECCION</a>
                 </article>
-                <picture>
+                <picture class="card_img">
                     <img src="./img/star-wars/baby-yoda-1.webp" alt="baby yoda">
                 </picture>
             </section>
-            <section>
-                <article>
-                    <h4>POKEMON INDIGO</h4>
+            <section class="card contenedor">
+                <article class="card_textos">
+                    <h3>POKEMON INDIGO</h3>
                     <p>
                         Atrapa todos los que puedas y disfruta de <br>
                         una colección llena de amigos.
                     </p>
                     <a href="./pages/coleccion.html">VER COLECCION</a>
                 </article>
-                <picture>
+                <picture class="card_img">
                     <img src="./img/pokemon/vulpix-1.webp" alt="baby yoda">
                 </picture>
             </section>
-            <section>
-                <article>
-                    <h4>HARRY POTTER</h4>
+            <section class="card contenedor">
+                <article class="card_textos">
+                    <h3>HARRY POTTER</h3>
                     <p>
                         Revive los recuerdos de una saga <br>
                         llena de magia y encanto.
                     </p>
                     <a href="./pages/coleccion.html">VER COLECCION</a>
                 </article>
-                <picture>
+                <picture class="card_img">
                     <img src="./img/harry-potter/snape-patronus-1.webp" alt="Luna">
                 </picture>
             </section>
         </div>
 
-        <banner>
+        <section class="hero contenedor">
             <h2>ULTIMOS LANZAMIENTOS</h2>
             <ul>
                 <li>
                     <article>
                         <a href="./pages/productos/trooper.html">
-                            <div>
+                            <div class="her_img">
                                 <picture>
                                     <img src="./img/cards/trooper-1.png" alt="STORMTROOPER">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
                             <div>
-                                <p>STAR WARS</p>
+                                <p class="her_collec">STAR WARS</p>
                                 <h4>STORMTROOPER LIGHTSABER</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERES</p>
+                                <p class="her_price">$ 1799,99</p>
+                                <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
                             </div>
                         </a>
                     </article>
@@ -115,17 +116,17 @@
                 <li>
                     <article>
                         <a href="./pages/productos/pidgeotto.html">
-                            <div>
+                            <div class="her_img">
                                 <picture>
                                     <img src="./img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
                             <div>
-                                <p>POKEMON</p>
+                                <p class="her_collec">POKEMON</p>
                                 <h4>PIDGEOTTO</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERES</p>
+                                <p class="her_price">$ 1799,99</p>
+                                <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
                             </div>
                         </a>
                     </article>
@@ -134,37 +135,37 @@
                 <li>
                     <article>
                         <a href="./pages/productos/luna.html">
-                            <div>
+                            <div class="her_img">
                                 <picture>
                                     <img src="./img/cards/luna-1.png" alt="LUNA LOVEGOOD">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
                             <div>
-                                <p>HARRY POTTER</p>
+                                <p class="her_collec">HARRY POTTER</p>
                                 <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERES</p>
+                                <p class="her_price">$ 1799,99</p>
+                                <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
                             </div>
                         </a>
                     </article>
                 </li>
 
             </ul>
-        </banner>
+        </section>
     </main>
 
     <!-- ===== comienza footer ====== -->
-    <footer>
-        <section>
-            <div>
+    <footer class="contenedor">
+        <section class="ftr_arriba">
+            <div class="ftr_menu">
                 <ul>
                     <li><a href="./pages/shop.html">SHOP</a></li>
                     <li><a href="./pages/login.html">INGRESAR</a></li>
                     <li><a href="./pages/contact.html">CONTACTO</a></li>
                 </ul>
             </div>
-            <picture>
+            <picture class="ftr_logo">
                 <img src="./img/branding/isotype.svg" alt="">
             </picture>
 

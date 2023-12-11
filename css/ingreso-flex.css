@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+   /* Paleta */
+   --primary-solid: #F33;
+   --primary-900: rgba(255, 51, 51, 0.9);
+   --primary-500: rgba(255, 51, 51, 0.5);
+   --primary-300: rgba(255, 51, 51, 0.3);
+
+   --secondary-solid: #1D84B5;
+   --secondary-900: rgba(29, 132, 181, 0.9);
+   --secondary-500: rgba(29, 132, 181, 0.5);
+   --secondary-300: rgba(29, 132, 181, 0.3);
+
+   --dark-solid: #1F1F1F;
+   --dark-900: rgba(31, 31, 31, 0.9);
+   --dark-500: rgba(31, 31, 31, 0.5);
+   --dark-300: rgba(31, 31, 31, 0.3);
+
+   --dark-bg-solid: #30343F;
+   --ligth-bg-solid: #FAFAFF;
+   --light-font-solid: #FFF;
+
+   /* Tipografia */
+   --base-font: 'Inter', sans-serif;
+   --alternative-font: 'Raleway', sans-serif;
+
+   /* Tamaños de fuentes */
+   --font-display: 4.6em;
+   --font-jumbo: 3.8em;
+   --font-xlarge: 3.0em;
+   --font-large: 2.4em;
+   --font-medium: 1.8em;
+   --font-small: 1.6em;
+   --font-xsmall: 1.4em;
+
+   /* Espaciados */
+   --spacing-128: 12.8rem;
+   --spacing-68: 6.8rem;
+   --spacing-36: 3.6rem;
+   --spacing-28: 2.8rem;
+   --spacing-24: 2.4rem;
+   --spacing-20: 2.0rem;
+   --spacing-16: 1.6rem;
+   --spacing-12: 1.2rem;
+   --spacing-8: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   height: 1600px;
+}
+
+.flex-header {
+   width: 1440px;
+   height: 144px;
+   padding: 0 110px;
+   background-color: #30343F;
+   line-height: 144px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.fl-hd-logo {
+   display: inline-flex;
+   width: 372px;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.fl-hd-menu {
+   width: 366px;
+}
+
+.fl-hd-mn {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+   color: #fff;
+
+   justify-content: space-between;
+
+   /* Remove the bullet dots */
+   list-style-type: none;
+}
+
+
+
+/* .adm-header {
+   background-color: green;
+   width: 1440px;
+   height: 144px;
+   position: relative;
+} */
+
+/* .ct-logo {
+   position: absolute;
+   left: 110px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 372px;
+   height: 65px;
+   justify-content: space-between;
+} */
+
+/* .menu {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   height: 100%;
+   margin-right: 110px;
+   /* Remove the bullet dots */
+/* list-style-type: none;  */
+/* Remove any default padding */
+/* padding: 0; 
+} */
+
+/* .menu-item {
+   margin-right: 84px;
+   color: #fff;    */
+/* Vertically center the menu item */
+/* line-height: 144px;
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+} */
+
+/* .menu-item:last-child {
+   margin-right: 0;
+} */
+
+.adm-footer {
+   background-color: #30343F;
+   width: 1440px;
+   height: 343px;
+   /* position: relative; */
+
+   display: flex;
+   flex-direction: column;
+   /* flex-wrap: nowrap; */
+   /* align-items: center; */
+   /* align-content: center; */
+   /* justify-content: center; */
+}
+
+.adm-footer-fila1 {
+   /* padding: 0 110px; */
+   height: 272px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0;
+   margin: 0 110px;
+
+   justify-content: space-between;
+}
+
+.adm-ft-menu {
+   width: 135px;
+   height: 122px;
+
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+   color: #fff;
+
+   list-style-type: none;
+   padding: 0;
+}
+
+.adm-ft-mn-item:last-child {
+   margin-bottom: 0;
+}
+
+.adm-ft-mn-item {
+   margin-bottom: 10px;
+   height: 23px;
+}
+
+.adm-ft-logo {
+   height: 143px;
+}
+
+.logo3 {
+   height: 100%;
+}
+
+.adm-footer-fila2 {
+   height: 70px;
+   line-height: 70px;
+   bottom: 0px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items:end;
+   align-content: center;
+   justify-content: center;
+
+}
+
+.adm-ft-copyright {
+   /* background-color: olive; */
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+   color: white;
+
+   padding: 0;
+   margin: 0;
+}
+
+
+
+.admin-login {
+   width: 1440px;
+   height: 515px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.admin-login {
+   /* width: 1440px; */
+   height: 515px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.admin-login h1 {
+   font-family: Raleway;
+   font-weight: 700;
+   font-size: 42px;
+   color: var(--dark-solid);
+
+   padding-bottom: 18px;
+}
+
+.adm-form {
+   height: 213px;
+   
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+
+}
+
+.adm-frm-labels {
+   width: 383px;
+   height: 99px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 24px;
+   color: black;
+}
+
+.adm-frm-email, .adm-frm-pass {
+   width: 380px;
+   height: 32px;
+   margin-bottom: 36px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.adm-frm-email label, .adm-frm-pass label{
+   width: 170px;
+}
+
+#lgn-password, #lgn-email {
+   width: 228px;
+   height: 35px;
+   line-height: 35px;
+   overflow: hidden;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 2px solid;
+   border-bottom-color: var(--primary-solid);
+   text-align: center;
+}
+
+.adm-frm-botons {
+   width: 383px;
+   height: 61px;
+   margin-top: 36px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-evenly;
+}
+
+.adm-btn-ingresar, .adm-recordarme {
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 18px;
+}
+
+.adm-btn-ingresar {
+   background-color: var(--primary-solid);
+   color: white;
+   width: 103px;
+   height: 39px;
+   border: 0;
+
+   /* margin: 0 41px 28px 55px; */
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-evenly;
+}
+
+.adm-recordarme {
+   width: 125px;
+   color: var(--dark-solid);
+   border: 0;
+   padding: 0;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+}
+

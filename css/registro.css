@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+   /* Paleta */
+   --primary-solid: #F33;
+   --primary-900: rgba(255, 51, 51, 0.9);
+   --primary-500: rgba(255, 51, 51, 0.5);
+   --primary-300: rgba(255, 51, 51, 0.3);
+
+   --secondary-solid: #1D84B5;
+   --secondary-900: rgba(29, 132, 181, 0.9);
+   --secondary-500: rgba(29, 132, 181, 0.5);
+   --secondary-300: rgba(29, 132, 181, 0.3);
+
+   --dark-solid: #1F1F1F;
+   --dark-900: rgba(31, 31, 31, 0.9);
+   --dark-500: rgba(31, 31, 31, 0.5);
+   --dark-300: rgba(31, 31, 31, 0.3);
+
+   --dark-bg-solid: #30343F;
+   --ligth-bg-solid: #FAFAFF;
+   --light-font-solid: #FFF;
+
+   /* Tipografia */
+   --base-font: 'Inter', sans-serif;
+   --alternative-font: 'Raleway', sans-serif;
+
+   /* Tamaños de fuentes */
+   --font-display: 4.6em;
+   --font-jumbo: 3.8em;
+   --font-xlarge: 3.0em;
+   --font-large: 2.4em;
+   --font-medium: 1.8em;
+   --font-small: 1.6em;
+   --font-xsmall: 1.4em;
+
+   /* Espaciados */
+   --spacing-128: 12.8rem;
+   --spacing-68: 6.8rem;
+   --spacing-36: 3.6rem;
+   --spacing-28: 2.8rem;
+   --spacing-24: 2.4rem;
+   --spacing-20: 2.0rem;
+   --spacing-16: 1.6rem;
+   --spacing-12: 1.2rem;
+   --spacing-8: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   width: 1440px;
+   /* height: 1085px; */
+}
+
+/* ************************************* */
+/* ************ H E A D E R ************ */
+/* ************************************* */
+
+.flex-header {
+   width: 100%;
+   height: 144px;
+   line-height: 144px;
+   padding: 0 110px;
+   background-color: var(--dark-bg-solid);
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+}
+
+.fl-hd-logo {
+   width: 372px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.fl-hd-menu {
+   width: 366px;
+   padding: 0;
+   margin: 0;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+
+   list-style-type: none;
+}
+
+.fl-hd-item {
+   text-decoration: none;
+   color: var(--light-font-solid);
+}
+
+.fl-hd-item:hover {
+   text-decoration: none;
+   color: var(--light-font-solid);
+}
+
+
+
+/* ************************************* */
+/* ************ F O O T E R ************ */
+/* ************************************* */
+
+
+.reg-footer {
+   background-color: #30343F;
+   width: 1440px;
+   height: 343px;
+   /* position: relative; */
+
+   display: flex;
+   flex-direction: column;
+   /* flex-wrap: nowrap; */
+   /* align-items: center; */
+   /* align-content: center; */
+   /* justify-content: center; */
+}
+
+.reg-footer-fila1 {
+   /* padding: 0 110px; */
+   height: 272px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0;
+   margin: 0 110px;
+
+   justify-content: space-between;
+}
+
+.reg-ft-menu {
+   width: 135px;
+   height: 122px;
+
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+   color: #fff;
+
+   list-style-type: none;
+   padding: 0;
+}
+
+.reg-ft-mn-item:last-child {
+   margin-bottom: 0;
+}
+
+.reg-ft-mn-item {
+   margin-bottom: 10px;
+   height: 23px;
+}
+
+.reg-ft-logo {
+   height: 143px;
+}
+
+.logo3 {
+   height: 100%;
+}
+
+.reg-footer-fila2 {
+   height: 70px;
+   line-height: 70px;
+   bottom: 0px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: end;
+   align-content: center;
+   justify-content: center;
+
+}
+
+.reg-ft-copyright {
+   /* background-color: olive; */
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 20px;
+   color: white;
+
+   padding: 0;
+   margin: 0;
+}
+
+
+/* **************************************************** */
+/* **************************************************** */
+/*               ACA COMIENZA EL BODY              */
+/* **************************************************** */
+/* **************************************************** */
+
+
+
+body {
+
+   width: 1440px;
+   height: 598px;
+   top: 144px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+}
+
+
+/* 
+.user-login {
+   width: 1440px;
+   height: 515px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+} */
+
+.user-register {
+   width: 1024px;
+   height: 526px;
+   padding: 0;
+   margin: 0;
+   border-radius: 3px;
+   
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-start;
+}
+
+.user-register h1 {
+   font-family: Raleway;
+   font-weight: 700;
+   font-size: 42px;
+   color: var(--dark-solid);
+
+   padding-bottom: 18px;
+}
+
+.user-register h2 {
+   font-family: Raleway;
+   font-weight: 500;
+   font-size: 32px;
+   color: var(--dark-solid);
+
+   padding-bottom: 18px;
+}
+
+.reg-form {
+   height: 213px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+
+}
+
+.reg-frm-labels {
+   width: 458px;
+   height: 292px;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 24px;
+   color: black;
+}
+
+.reg-frm-nombre,
+.reg-frm-apellido,
+.reg-frm-email,
+.reg-frm-pass,
+.reg-frm-passconf {
+   width: 456px;
+   height: 29px;
+   margin-bottom: 36px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.reg-frm-nombre label,
+.reg-frm-apellido label,
+.reg-frm-email label,
+.reg-frm-pass label,
+.reg-frm-passconf label {
+   width: 232px;
+}
+
+#reg-nombre,
+#reg-apellido,
+#reg-email,
+#reg-password,
+#reg-passconf {
+   width: 209px;
+   height: 25px;
+   line-height: 25px;
+   overflow: hidden;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 2px solid;
+   border-bottom-color: var(--primary-solid);
+   text-align: center;
+   
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 16px;
+   color: #B9B9B9;
+   color
+}
+
+#reg-nombre,
+#reg-apellido,
+#reg-email,
+#reg-password,
+#reg-passconf {
+
+
+.reg-frm-botons {
+   width: 383px;
+   height: 61px;
+   margin-top: 36px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-evenly;
+}
+
+.reg-btn-ingresar,
+.reg-recordarme {
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 18px;
+}
+
+.reg-btn-ingresar {
+   background-color: var(--primary-solid);
+   color: white;
+   width: 103px;
+   height: 39px;
+   border: 0;
+
+   /* margin: 0 41px 28px 55px; */
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-evenly;
+}
+
+.reg-recordarme {
+   width: 125px;
+   color: var(--dark-solid);
+   border: 0;
+   padding: 0;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+}
