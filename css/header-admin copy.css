@@ -1,0 +1,67 @@
+@import url("./estandar.css");
+
+body {
+  /* background-color: var(--dark-bg-solid); */
+
+  a {
+    text-decoration: none;
+  }
+
+  ul, ol {
+    list-style-type: none;
+  }
+}
+
+header {
+   width: 1440px;
+   height: 144px;
+   padding: 0 110px;
+   background-color: var(--dark-solid);
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: unset;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+}
+
+.hdr-lg1 {
+   width: 80.24px;
+   height: 65.19px;
+}
+
+.hdr-logo {
+   width: 372px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.hdr-menu {
+   width: 366px;
+   padding: 0;
+   margin: 0;
+   line-height: 23.48px;
+
+   list-style-type: none;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: none;
+   align-content: center;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hdr-item {
+   font-style: var(--alternative-font);
+   font-weight: 500;
+   font-size: 20px;
+   color: white;
+
+   text-decoration: none;
+   color: var(--light-font-solid);
+}

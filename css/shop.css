@@ -1,0 +1,302 @@
+@import url("./estandar.css");
+
+.cuerpo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  width: 1200px;
+
+  margin: 32px 0;
+
+  line-height: 120%;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul,
+  ol {
+    list-style-type: none;
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  width: 264px;
+  min-height: 512px;
+}
+
+.sidebar {
+}
+
+.side_buscar,
+.side_ordenar,
+.side_precio,
+.side_filtrar {
+  margin: 8px 0;
+
+  h3 {
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 200%;
+  }
+}
+
+.side_buscar {
+  width: 248px;
+  height: 84px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  input {
+    height: 44px;
+    width: 248px;
+    /* margin: 14px 0; */
+
+    border: 2px solid black;
+    padding: 6px;
+
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.seleccion {
+  height: 44px;
+  width: 248px;
+  /* margin: 14px 0; */
+
+  border: 2px solid black;
+  padding: 6px;
+
+  font-family: var(--base-font);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.side_ordenar {
+  width: 248px;
+  height: 84px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .side_chkb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  label {
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.side_precio {
+  h4 {
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .side_prc_input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    input {
+      height: 36px;
+      width: 160px;
+      margin-left: 16px;
+      padding: 8px;
+
+      font-family: var(--base-font);
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
+
+.side_chkb {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 32px;
+    margin-bottom: 4px;
+
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: 18px;
+
+    input[type="checkbox"] {
+      width: 24px;
+      height: 24px;
+      border-radius: 2px;
+
+      margin-right: 8px;
+    }
+  }
+}
+
+main {
+  width: 776px;
+  min-height: 512px;
+
+  margin: 16px 0;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 32px auto;
+}
+
+.card_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* max-height: 352px; */
+}
+
+.card_img {
+  position: relative;
+  min-height: 352px;
+
+  display: flex;
+  align-items: center;
+}
+
+.card_img p {
+  position: absolute;
+  width: 96px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--alternative-font);
+  font-weight: 500;
+  font-size: 14px;
+
+  background-color: red;
+  color: white;
+  top: 0;
+  right: 0;
+}
+
+.card_item {
+  width: 248px;
+  height: 512px;
+
+  display: flex;
+  flex-direction: column;
+
+  h4,
+  .card_collec,
+  .card_price {
+    margin-bottom: 13px;
+  }
+
+  h4 {
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.card_texts {
+  /* flex-grow: 1; */
+  /* margin-top: auto; */
+  min-height: 136px;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+}
+
+.card_collec {
+  font-family: var(--alternative-font);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card_price {
+  font-family: var(--base-font);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.card_cuotas {
+  font-family: var(--base-font);
+  font-weight: 700;
+  font-size: 12px;
+  color: #1d84b5;
+}
+
+.costos {
+  margin-top: auto;
+}
+
+.pageSelector {
+  left: 256px;
+  width: auto;
+  height: 48px;
+
+  margin: 68px auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  a:hover {
+    border-color: #ff0000;
+  }
+
+  a {
+    width: 44px;
+    height: 44px;
+    margin: auto 2px;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .card {
+         width: 300px;
+         height: 500px;
+         border: 1px solid #ccc;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .card img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+      }
+
+      .card-content {
+         /* alineados como se le ocurrió  */
+         /* flex-grow: 1;
+         padding: 10px; */
+
+         /* alineados al fondo de la página  */
+         /* position: relative;
+         bottom: 0;
+         width: 100%;
+         */
+
+         /* alineados como se le ocurrió  */
+         margin-top: auto;
+         padding: 0;
+      }
+
+      .cuerpito {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="cuerpito">
+      <div class="card">
+         <img src="../img/pokemon/pidgeotto-1.webp" alt="Image">
+         <div class="card-content">
+            <p>Your text content goes here.</p>
+            <p>Your text content goes here.</p>
+            <p>Your text content goes here.</p>
+            <p>Your text content goes here.</p>
+         </div>
+      </div>
+      <div class="card">
+         <img src="../img/pokemon/pidgeotto-1.webp" alt="Image">
+         <div class="card-content">
+            <p>Your text content goes here.</p>
+            <p>Your text content goes here.</p>
+         </div>
+      </div>
+      <div class="card">
+         <img src="../img/pokemon/pidgeotto-1.webp" alt="Image">
+         <div class="card-content">
+            <p>Your text content goes here.</p>
+            <p>Your text content goes here.</p>
+            <p>Your text content goes here.</p>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
