@@ -1,0 +1,114 @@
+.hero {
+    width: 1200px;
+    margin: 28px auto 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+      font-family: var(--alternative-font);
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      margin-bottom: 32px;
+    }
+  
+    ul {
+      width: 1200px;
+      height: 512px;
+  
+      /* display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; */
+    }
+  
+    li {
+      width: 360px;
+      height: 512px;
+  
+      /* display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; */
+    }
+  
+    .hero_img:hover #hero-img-trop-frnt {
+        opacity: 0;
+    }
+    .hero_img:hover #hero-img-trop-back {
+        opacity: 1;
+    }
+
+    .hero_img {
+      height: 352px;
+  
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        #hero-img-trop-frnt {
+            opacity: 1
+        }
+      }
+  
+      span {
+        position: absolute;
+        width: 96px;
+        height: 30px;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        font-family: var(--alternative-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+  
+        background-color: red;
+        color: white;
+        top: 0;
+        right: 0;
+      }
+    }
+  
+    h4 {
+      font-family: var(--base-font);
+      margin-bottom: 13px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+    }
+  
+    .hero_collec {
+      margin-bottom: 13px;
+      font-family: var(--alternative-font);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+    }
+  
+    .hero_price {
+      margin-bottom: 13px;
+      font-family: var(--base-font);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+    }
+  
+    .hero_cuotas {
+      margin-bottom: 13px;
+      color: #1d84b5;
+      font-family: var(--base-font);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 120%;
+    }
+  }

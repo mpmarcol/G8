@@ -1,0 +1,127 @@
+@import url("/css/estandar.css");
+/* @import url("/css/vs/slider.css"); */
+@import url("/css/ext/glide.core.min.css");
+@import url("/css/ext/glide.theme.min.css");
+
+.glide {
+   width: 1200px;
+   height: 512px;
+}
+
+.glide__slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 512px;
+}
+
+.tarj-up {
+   width: 356px;
+   position: relative;
+
+   display: flex;
+}
+
+.tarjeton {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.tarj-epic {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 96px;
+   height: 30px;
+   background-color: red;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+
+   font-family: var(--alternative-font);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 120%;
+}
+
+.tarj-pict {
+   display: flex;
+   flex-direction: column;
+}
+
+.tarj-dn {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+
+   .tarj-titu {
+      font-family: var(--base-font);
+      margin-bottom: 13px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+   }
+
+   .tarj-cole {
+      margin-bottom: 13px;
+      font-family: var(--alternative-font);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+   }
+
+   .tarj-prec {
+      margin-bottom: 13px;
+      font-family: var(--base-font);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+   }
+
+   .tarj-cuot {
+      margin-bottom: 13px;
+      color: #1d84b5;
+      font-family: var(--base-font);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 120%;
+   }
+
+   .glide__bullets button {
+      /* border: 2px solid blue; */
+      /* background-color: red; */
+   }
+}
+
+.glide__arrow:hover {
+   opacity: 0.75;
+}
+.glide__arrow {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: none;
+   transform: scale(1.5);
+   background-color: blanchedalmond;
+   color: #a1754d ;
+   /* margin: auto 0 60px 0; */
+   padding: 6px;
+   border-radius: 40%;
+   opacity: 0.25;
+}
+
+.glide__arrow--left {
+   left: -6px;
+}
+
+.glide__arrow--right {
+   right: -6px;
+}

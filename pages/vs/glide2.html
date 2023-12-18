@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Slider</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+   <link rel="stylesheet" href="/css/estandar.css">
+   <link rel="stylesheet" href="/css/vs/slider.css">
+
+   <style>
+      .glide {
+         width: 1200px;
+         height: 512px;
+      }
+
+      .glide__slide {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 512px;
+      }
+
+      .tarj-up {
+         width: 356px;
+         position: relative;
+
+         display: flex;
+      }
+
+      .tarjeton {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .tarj-epic {
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 96px;
+         height: 30px;
+         background-color: red;
+         color: white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+
+         font-family: var(--alternative-font);
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 120%;
+      }
+
+      .tarj-pict {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .tarj-dn {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: center;
+         margin: 0;
+         padding: 0;
+
+         .tarj-titu {
+            font-family: var(--base-font);
+            margin-bottom: 13px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 120%;
+         }
+
+         .tarj-cole {
+            margin-bottom: 13px;
+            font-family: var(--alternative-font);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 120%;
+         }
+
+         .tarj-prec {
+            margin-bottom: 13px;
+            font-family: var(--base-font);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+         }
+
+         .tarj-cuot {
+            margin-bottom: 13px;
+            color: #1d84b5;
+            font-family: var(--base-font);
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 120%;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+         <ul class="glide__slides">
+
+            <li class="glide__slide">
+               <a href="" class="tarjeton">
+                  <div class="tarj-up">
+                     <picture class="tarj-pict">
+                        <img src="/img/cards/trooper-1.png" alt="Stormtrooper">
+                     </picture>
+                     <p class="tarj-epic">NUEVO</p>
+                  </div>
+                  <div class="tarj-dn">
+                     <p class="tarj-cole">STAR WARS</p>
+                     <h4 class="tarj-titu">STORMTROOPER LIGHTSABER</h4>
+                     <p class="tarj-prec">$ 1799,99</p>
+                     <p class="tarj-cuot">3 CUOTAS SIN INTERES</p>
+                  </div>
+               </a>
+            </li>
+
+            <li class="glide__slide">
+               <a href="" class="tarjeton">
+                  <div class="tarj-up">
+                     <picture class="tarj-pict">
+                        <img src="/img/cards/pidgeotto-1.png" alt="Pidgeotto">
+                     </picture>
+                     <p class="tarj-epic">NUEVO</p>
+                  </div>
+                  <div class="tarj-dn">
+                     <p class="tarj-cole">POKEMON</p>
+                     <h4 class="tarj-titu">STORMTROOPER LIGHTSABER</h4>
+                     <p class="tarj-prec">$ 1799,99</p>
+                     <p class="tarj-cuot">3 CUOTAS SIN INTERES</p>
+                  </div>
+               </a>
+            </li>
+
+            <li class="glide__slide">
+               <a href="" class="tarjeton">
+                  <div class="tarj-up">
+                     <picture class="tarj-pict">
+                        <img src="/img/cards/luna-1.png" alt="Luna Lovegood">
+                     </picture>
+                     <p class="tarj-epic">NUEVO</p>
+                  </div>
+                  <div class="tarj-dn">
+                     <p class="tarj-cole">HARRY POTTER</p>
+                     <h4 class="tarj-titu">LUNA LOVEGOOD LION MASK</h4>
+                     <p class="tarj-prec">$ 1799,99</p>
+                     <p class="tarj-cuot">3 CUOTAS SIN INTERES</p>
+                  </div>
+               </a>
+            </li>
+            
+         </ul>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+   <script>
+      new Glide('.glide', {
+         type: 'carousel',
+         perView: 3,
+         gap: 30,
+         autoplay: 2000,
+      }).mount();
+   </script>
+</body>
+
+</html>

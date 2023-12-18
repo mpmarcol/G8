@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUNKOSHOP - SHOP</title>
-    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="/css/pages/shop.css">
 </head>
 
 <body>
 
-    <header id="header">
-
-    </header>
+    <header id="header">    </header>
 
     <!-- === ASIDE === -->
     <div class="cuerpo contenedor">
@@ -58,10 +56,10 @@
             <div>
                 <ul class="card3">
                     <li class="card_item">
-                        <a href="../pages/productos/trooper.html">
+                        <a href="/pages/productos/trooper.html">
                             <div class="card_img">
                                 <picture>
-                                    <img src="../img/cards/trooper-1.png" alt="STORMTROOPER">
+                                    <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
@@ -76,10 +74,10 @@
                         </a>
                     </li>
                     <li class="card_item">
-                        <a href="../pages/productos/pidgeotto.html">
+                        <a href="/pages/productos/pidgeotto.html">
                             <div class="card_img">
                                 <picture>
-                                    <img src="../img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                                    <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
@@ -94,10 +92,10 @@
                         </a>
                     </li>
                     <li class="card_item">
-                        <a href="../pages/productos/luna.html">
+                        <a href="/pages/productos/luna.html">
                             <div class="card_img">
                                 <picture>
-                                    <img src="../img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                                    <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
@@ -114,10 +112,10 @@
                 </ul>
                 <ul class="card3">
                     <li class="card_item">
-                        <a href="../pages/productos/trooper.html">
+                        <a href="/pages/productos/trooper.html">
                             <div class="card_img">
                                 <picture>
-                                    <img src="../img/cards/trooper-1.png" alt="STORMTROOPER">
+                                    <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
@@ -132,10 +130,10 @@
                         </a>
                     </li>
                     <li class="card_item">
-                        <a href="../pages/productos/pidgeotto.html">
+                        <a href="/pages/productos/pidgeotto.html">
                             <div class="card_img">
                                 <picture>
-                                    <img src="../img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                                    <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
@@ -150,10 +148,10 @@
                         </a>
                     </li>
                     <li class="card_item">
-                        <a href="../pages/productos/luna.html">
+                        <a href="/pages/productos/luna.html">
                             <div class="card_img">
                                 <picture>
-                                    <img src="../img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                                    <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
                                 </picture>
                                 <p>NUEVO</p>
                             </div>
@@ -190,7 +188,7 @@
 
     <script>
         // Uso de JavaScript para cargar header.html en la pagina
-        fetch("../pages/header.html")
+        fetch("/pages/partials/header.html")
             .then((response) => response.text())
             .then((data) => {
                 const headerContainer = document.getElementById("header");
@@ -206,7 +204,7 @@
         //     });
 
         // Uso de JavaScript para cargar footer.html en la pagina
-        fetch("../pages/footer.html")
+        fetch("/pages/partials/footer.html")
             .then((response) => response.text())
             .then((data) => {
                 const headerContainer = document.getElementById("footer");

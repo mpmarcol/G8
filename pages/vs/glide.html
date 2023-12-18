@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Glide</title>
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+   <link rel="stylesheet" href="/css/vs/glide.css">
+</head>
+
+<body>
+   <div class="franjita">
+      <div class="glide">
+         <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+               <a href="" class="pepito">
+                  <li class="glide__slide">
+                     <img src="/img/cards/luna-1.png" alt="">
+                     <p>toto</p>
+                     <p>toto</p>
+                  </li>
+               </a>
+               <a href="" class="pepito">
+                  <li class="glide__slide">
+                     <img src="/img/cards/pidgeotto-1.png" alt="">
+                     <p>toto</p>
+                     <p>toto</p>
+                     <p>toto</p>
+                  </li>
+               </a>
+               <a href="" class="pepito">
+                  <li class="glide__slide">
+                     <img src="/img/cards/trooper-1.png  " alt="">
+                     <p>toto</p>
+                     <p>toto</p>
+                     <p>toto</p>
+                     <p>toto</p>
+                     <p>toto</p>
+                  </li>
+               </a>
+            </ul>
+
+            <!-- <div data-glide-el="controls">
+               <button data-glide-dir="<<">Start</button>
+               <button data-glide-dir=">>">End</button>
+            </div> -->
+
+            <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
+               <button class="glide__bullet" data-glide-dir="=0"></button>
+               <button class="glide__bullet" data-glide-dir="=1"></button>
+               <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+   <script>
+      new Glide('#intro', {
+         type: 'carousel',
+         startAt: 0,
+         perView: 3
+      }).mount();
+
+      var glide2 = new Glide('.glide', {
+         type: 'carousel',
+         perView: 3,
+         focusAt: 'center',
+         gap: 30,
+         breakpoints: {
+            800: {
+               perView: 2
+            },
+            480: {
+               perView: 1
+            }
+         }
+      });
+      glide2.mount();
+   </script>
+</body>
+
+</html>

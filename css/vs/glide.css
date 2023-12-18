@@ -1,0 +1,14 @@
+@import url("/css/estandar.css");
+
+.franjita {
+   width: 1200px;
+   height: 700px;
+   background-color: bisque;
+}
+
+.pepito {
+   width: 356px;
+   height: 512px;
+
+   background-color: azure;
+}

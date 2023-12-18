@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Glide</title>
+
+   <!-- <link rel="stylesheet" href="/css/ext/glide.core.min.css">
+   <link rel="stylesheet" href="/css/ext/glide.theme.min.css"> -->
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+   <style>
+      *,
+      *::after,
+      *::before {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         /* width: 600px; */
+      }
+
+      main {
+         /* width: 800px; */
+         /* margin: 10px auto; */
+      }
+
+      img {
+         width: 200px;
+         height: auto;
+      }
+
+      .glide {
+         /* width: 1200px; */
+
+
+         /* display: flex; */
+         /* flex-direction: row; */
+      }
+
+      .glide__slides {
+         /* width: 600px; */
+
+         /* display: flex; */
+      }
+
+      .glide__slide {
+         /* width: 200px; */
+         /* height: auto; */
+
+         /* display: flex; */
+      }
+
+      .glide__slide li {
+         /* width: 400px; */
+         /* display: flex; */
+      }
+
+      .card {
+         /* width: 300px; */
+         */
+         /* height: 500px;
+
+         /* position: relative; */
+         /* display: flex; */
+      }
+
+      .glide__bullet {
+         background-color: darkgreen;
+         opacity: 0.4;
+      }
+
+      .recuadro {
+         width: 800px;
+         height: 500px;
+         border: 3px solid red;
+         background-color: lightgoldenrodyellow;
+         color: darkred;
+      }
+
+      .circulos {
+         transform: scale(1.5);
+      }
+
+      .glide__arrow {
+         border-radius: 50%;
+         color: darkmagenta;
+         background-color: lightpink;
+         opacity: 0.6;
+         border: none;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="recuadro">
+      <div class="glide">
+         <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+               <li class="glide__slide">
+                  <div class="card"><img src="/img/cards/luna-1.png" alt=""></div>
+               </li>
+               <li class="glide__slide">
+                  <div class="card"><img src="/img/cards/pidgeotto-1.png" alt=""></div>
+               </li>
+               <li class="glide__slide">
+                  <div class="card"><img src="/img/cards/trooper-1.png" alt=""></div>
+               </li>
+               <li class="glide__slide">
+                  <div class="card"><img src="/img/cards/luna-box.png" alt=""></div>
+               </li>
+               <li class="glide__slide">
+                  <div class="card"><img src="/img/cards/pidgeotto-box.png" alt=""></div>
+               </li>
+               <li class="glide__slide">
+                  <div class="card"><img src="/img/cards/trooper-box.png" alt=""></div>
+               </li>
+            </ul>
+            <div class="glide__bullets circulos" data-glide-el="controls[nav]">
+               <button class="glide__bullet" data-glide-dir="=0"></button>
+               <button class="glide__bullet" data-glide-dir="=1"></button>
+               <button class="glide__bullet" data-glide-dir="=2"></button>
+               <button class="glide__bullet" data-glide-dir="=3"></button>
+               <button class="glide__bullet" data-glide-dir="=4"></button>
+               <button class="glide__bullet" data-glide-dir="=5"></button>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+               <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                  <iconify-icon icon="akar-icons:arrow-left-thick"></iconify-icon>
+               </button>
+               <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                  <iconify-icon icon="akar-icons:arrow-right-thick"></iconify-icon>
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- <script src="/js/ext/glide.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+   <script>
+      new Glide('.glide', {
+         type: 'carousel',
+         startAt: 0,
+         perView: 3,
+         gap: 20
+      }).mount();
+   </script>
+   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

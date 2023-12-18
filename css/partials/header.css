@@ -1,19 +1,16 @@
-@import url("./estandar.css");
-
-body {
-  /* background-color: var(--dark-bg-solid); */
-
-  a {
-    text-decoration: none;
-  }
-
-  ul, ol {
-    list-style-type: none;
-  }
-}
+/* @import url("/css/estandar.css"); */
 
 header {
   background-color: var(--dark-bg-solid);
+  /* background-color: var(--dark-bg-solid); */
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: lightpink;
+  }
 }
 
 .contenedor {
@@ -49,7 +46,7 @@ header {
   align-items: center;
 
   list-style-type: none;
-  
+
   justify-content: space-between;
 }
 
@@ -62,4 +59,3 @@ header {
   font-size: 20px;
   line-height: 120%;
 }
-

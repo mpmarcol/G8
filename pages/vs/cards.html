@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      #cardContainer {
+         max-width: 600px;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: row;
+      }
+      .card, .card2, .card3 {
+         width: 300px;
+         height: 500px;
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+
+         background-color: lightskyblue;
+
+      }
+
+      .cardTitle {
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 24px;
+         font-weight: 700;
+         font-style: italic;
+      }
+
+      .card img,
+      .card2 img ,
+      .card3 img {
+         width: 100px;
+         height: auto;
+      }
+
+      .card p ,
+      .card2 p ,
+      .card3 p {
+         width: 300px;
+         text-align: center;
+      }
+
+      
+   </style>
+</head>
+
+<body>
+   <div id="cardContainer"></div>
+   <script>
+      // Create a card object with title, image source, and description
+      const card = {
+         title: "Card Title",
+         imageSrc: "/img/cards/luna-1.png",
+         description: "Card 1 description goes here."
+      };
+
+      const card2 = {
+         title: "Card Title",
+         imageSrc: "/img/cards/luna-1.png",
+         description: "Card 2 description goes here."
+      };
+
+      const card3 = {
+         title: "Card Title",
+         imageSrc: "/img/cards/luna-1.png",
+         description: "Card 3 description goes here."
+      };
+
+      // Create the card element
+      const cardElement = document.createElement("div");
+      const cardElement2 = document.createElement("div");
+      const cardElement3 = document.createElement("div");
+      cardElement.classList.add("card");
+      cardElement2.classList.add("card2");
+      cardElement3.classList.add("card3");
+
+      // Create the title element
+      const titleElement = document.createElement("h2");
+      const titleElement2 = document.createElement("h2");
+      const titleElement3 = document.createElement("h2");
+      titleElement.textContent = card.title;
+      titleElement.className = "cardTitle";
+      titleElement2.className = "cardTitle";
+      titleElement3.className = "cardTitle";
+      titleElement2.textContent = card2.title;
+      titleElement3.textContent = card3.title;
+      cardElement.appendChild(titleElement);
+      cardElement2.appendChild(titleElement2);
+      cardElement3.appendChild(titleElement3);
+
+      // Create the image element
+      const imageElement = document.createElement("img");
+      const imageElement2 = document.createElement("img");
+      const imageElement3 = document.createElement("img");
+      imageElement.src = card.imageSrc;
+      imageElement2.src = card2.imageSrc;
+      imageElement3.src = card3.imageSrc;
+      cardElement.appendChild(imageElement);
+      cardElement2.appendChild(imageElement2);
+      cardElement3.appendChild(imageElement3);
+
+      // Create the description element
+      const descriptionElement = document.createElement("p");
+      const descriptionElement2 = document.createElement("p");
+      const descriptionElement3 = document.createElement("p");
+      descriptionElement.textContent = card.description;
+      descriptionElement2.textContent = card2.description;
+      descriptionElement3.textContent = card3.description;
+      cardElement.appendChild(descriptionElement);
+      cardElement2.appendChild(descriptionElement2);
+      cardElement3.appendChild(descriptionElement3);
+
+      // Append the card element to the cardContainer div
+      const cardContainer = document.getElementById("cardContainer");
+      cardContainer.appendChild(cardElement);
+      cardContainer.appendChild(cardElement2);
+      cardContainer.appendChild(cardElement3);
+   </script>
+</body>
+
+</html>
