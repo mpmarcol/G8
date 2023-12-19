@@ -1,99 +1,99 @@
-/* @import url("../misc/estandar.css"); */
-
-
+@import url("/css/estandar.css");
 
 .completar {
-    height: 840px;
-    background-color: white;
-    padding: 0;
-    margin: 0 auto;
+  height: 560px;
+  background-color: white;
+  padding: 0;
+  margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: unset;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: unset;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .comp-titl {
-    height: 195px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 
-    font-style: Raleway;
-    letter-spacing: 0.04em;
-    color: var(--dark-solid);
-
-}
-
-.comp-titl h1 {
-    display: flex;
-
-    margin-bottom: 36px;
-
-    font-weight: 700;
-    font-size: 42px;
-    /* margin-top: 28px; */
-    line-height: 49px;
+  font-style: Raleway;
+  letter-spacing: 0.04em;
+  color: var(--dark-solid);
 }
 
 .comp-titl h2 {
-    display: flex;
+  display: flex;
 
-    margin: 0;
+  margin-bottom: 16px;
 
-    font-weight: 500;
-    font-size: 32px;
-    /* margin-top: 28px; */
-    line-height: 38px;
+  font-weight: 700;
+  font-size: 42px;
+
+  line-height: 49px;
+}
+/* 
+.comp-titl h2 {
+  display: flex;
+
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+} */
+
+.comp-titl h3 {
+  /* margin-top: 28px; */
 }
 
 .comp-form {
-    width: 840px;
-    height: 640px;
-    /* height: 292px; */
+  width: 840px;
+  /* height: 640px; */
+  height: 292px;
 
-    /* background-color: tomato; */
+  /* background-color: tomato; */
 
-    display: flex;
-    flex-direction: column;
-    flex-grow: unset;
-    flex-wrap: unset;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  flex-grow: unset;
+  flex-wrap: unset;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
 
-    font-style: Inter;
-    font-weight: 400;
+  font-style: Inter;
+  font-weight: 400;
 }
 
 .reg-form {
-    width: 840px;
+  width: 840px;
 
-    font-size: 24px;
+  font-size: 24px;
 
-    display: flex;
-    flex-direction: column;
-    flex-grow: unset;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: unset;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .reg-frm-labels {
-    width: 457px;
-    height: 276px;
+  width: 457px;
+  height: 276px;
 
-    display: flex;
-    flex-direction: column;
-    flex-grow: unset;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-grow: unset;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .reg-frm-nombre,
@@ -101,38 +101,56 @@
 .reg-frm-email,
 .reg-frm-pass,
 .reg-frm-passconf {
-    width: 457px;
-    height: 29px;
-    line-height: 29px;
-    margin-bottom: 24px;
+  width: 640px;
+  height: 29px;
+  line-height: 29px;
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-direction: row;
+  flex-grow: unset;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+
+  label {
+    width: 208px;
+    margin-right: 12px;
 
     display: flex;
-    flex-direction: row;
-    flex-grow: unset;
     align-items: center;
-    align-content: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 
+    text-align: right;
+  }
+
+  p {
+    font-family: var(--base-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: lightpink;
+  }
 }
 
 .reg-frm-passconf {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #reg-nombre:hover,
 #reg-apellido:hover,
 #reg-email:hover,
 #reg-password:hover,
-#reg-passconf:hover  {
-    background-color: #c0e0f3;
+#reg-passconf:hover {
+  background-color: #c0e0f3;
 }
 
 #reg-nombre::placeholder,
 #reg-apellido::placeholder,
 #reg-email::placeholder,
 #reg-password::placeholder,
-#reg-passconf::placeholder  {
-    color: #1D84B580;
+#reg-passconf::placeholder {
+  color: #1d84b580;
 }
 
 #reg-nombre,
@@ -140,40 +158,42 @@
 #reg-email,
 #reg-password,
 #reg-passconf {
-    width: 208px;
-    height: 29px;
+  width: 420px;
+  height: 29px;
 
-    font-size: 21px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+  font-size: 21px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 
-    border-bottom-width: 2px;
-    border-bottom-color: var(--primary-solid);
+  border-bottom-width: 2px;
+  border-bottom-color: var(--primary-solid);
 }
 
 .reg-frm-botons {
-    width: 457px;
-    font-size: 21px;
-    
-    display: flex;
-    flex-direction: row-reverse;
-    flex-grow: unset;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
+  width: 457px;
+  font-size: 21px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: unset;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
-.reg-frm-botons [type=checkbox] {
-    transform: scale(1.2);
+.reg-frm-botons [type="checkbox"] {
+  transform: scale(1.6);
+  margin: auto 10px 10px 0;
 }
 
 .reg-btn-registrar {
-    width: 103px;
-    height: 39px;
-    background-color: var(--primary-solid);
-    color: white;
+  width: 108px;
+  height: 42px;
+  margin-left: 8px;
 
-    font-size: 1em;  
+  background-color: var(--primary-solid);
+  color: white;
+
+  font-size: 1em;
 }
-

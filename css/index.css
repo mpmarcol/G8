@@ -126,3 +126,18 @@
   order: -1;
 }
 
+.indx-slider {
+  
+  width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+}
