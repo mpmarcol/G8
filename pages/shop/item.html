@@ -5,32 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUNKOSHOP - SHOP</title>
-    <link rel="stylesheet" href="../css/item.css">
+    <link rel="stylesheet" href="/css/pages/item.css">
 </head>
 
 <body>
-
     <header id="header"> </header>
 
     <section class="item">
         
         <picture class="item_pict">
-            <img src="../img/star-wars/baby-yoda-1.webp" alt="baby yoda">
+            <img src="/img/star-wars/baby-yoda-1.webp" alt="baby yoda">
         </picture>
 
         <article class="item_text">
             <h4>STAR WARS</h4>
             <h2>BABY YODA BLUEBALL</h2>
-            <p class="item_desc">
-                Figura coleccionable de Baby Yoda (Grogu) -<br>
+            <span class="item_desc">
+                Figura coleccionable de Baby Yoda (Grogu)<br>
                 The Mandalorian Saga, edición limitada.
-            </p>
+            </span>
             <p class="item_prec">$ 1799,99</p>
             <div class="item_cant">
-                <input type="text">
+                <input class="item_input" type="text" name="quantity" id="quantity" placeholder="0">
                 <div class="item_adder">
-                    <a href="">+</a>
-                    <a href="">-</a>
+                    <!-- <a id="item-add" href="">+</a> -->
+                    <button id="item-add" class="" type="button">+</button>
+                    <!-- <a id="item-rest" href="">-</a> -->
+                    <button id="item-rest" class="" type="button">-</button>
                 </div>
                 <button>Agregar al Carrito</button>
             </div>
@@ -43,10 +44,10 @@
         <ul>
             <li>
                 <article>
-                    <a href="../pages/productos/trooper.html">
+                    <a href="/pages/productos/trooper.html">
                         <div class="her_img">
                             <picture>
-                                <img src="../img/cards/trooper-1.png" alt="STORMTROOPER">
+                                <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
                             </picture>
                             <p>NUEVO</p>
                         </div>
@@ -62,10 +63,10 @@
 
             <li>
                 <article>
-                    <a href="../pages/productos/pidgeotto.html">
+                    <a href="/pages/productos/pidgeotto.html">
                         <div class="her_img">
                             <picture>
-                                <img src="../img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                                <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
                             </picture>
                             <p>NUEVO</p>
                         </div>
@@ -81,10 +82,10 @@
 
             <li>
                 <article>
-                    <a href="../pages/productos/luna.html">
+                    <a href="/pages/productos/luna.html">
                         <div class="her_img">
                             <picture>
-                                <img src="../img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                                <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
                             </picture>
                             <p>NUEVO</p>
                         </div>
@@ -103,32 +104,23 @@
 
     <footer id="footer"></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="/js/item.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="/js/ext/all.min.js"></script>
 
     <script>
-        // Uso de JavaScript para cargar header.html en la pagina
-        fetch("../pages/header.html")
+        fetch("/pages/partials/header.html")
             .then((response) => response.text())
             .then((data) => {
                 const headerContainer = document.getElementById("header");
                 headerContainer.innerHTML = data;
             });
-
-        // Uso de JavaScript para cargar banner.html en la pagina
-        // fetch("./pages/banner.html")
-        //     .then((response) => response.text())
-        //     .then((data) => {
-        //         const headerContainer = document.getElementById("banner");
-        //         headerContainer.innerHTML = data;
-        //     });
-
-        // Uso de JavaScript para cargar footer.html en la pagina
-        fetch("../pages/footer.html")
+        
+        fetch("/pages/partials/footer.html")
             .then((response) => response.text())
             .then((data) => {
-                const headerContainer = document.getElementById("footer");
-                headerContainer.innerHTML = data;
+                const footerContainer = document.getElementById("footer");
+                footerContainer.innerHTML = data;
             });
     </script>
 </body>

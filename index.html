@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/ext/glide.theme.min.css">
 
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/vs/slider.css">
 
 </head>
 
@@ -27,7 +28,7 @@
             <!-- <section class="card-class"> </section> -->
             <!-- <section class="card-class"> </section> -->
 
-            <!-- <section class="card contenedor">
+            <section class="card contenedor">
                 <article class="card_textos">
                     <h3>STAR WARS &<br>THE MANDALORIAN</h3>
                     <p>
@@ -67,70 +68,28 @@
                 <picture class="card_img">
                     <img src="/img/harry-potter/snape-patronus-1.webp" alt="Luna">
                 </picture>
-            </section> -->
+            </section>
 
         </div>
 
     </main>
 
-    <!-- <div class="glide slider">
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides sldr-items">
-                <li class="glide__slide sldr-item">
-                    <a href="/pages/productos/luna.html">
-                        <div class="hero_img">
-                            <picture>
-                                <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
-                            </picture>
-                            <p>NUEVO</p>
-                        </div>
-                        <div>
-                            <p class="hero_collec">HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
-                            <p class="hero_price">$ 1799,99</p>
-                            <p class="hero_cuotas">3 CUOTAS SIN INTERES</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="glide__slide sldr-item">0
-                    <a href="/pages/productos/luna.html">
-                        <div class="hero_img">
-                            <picture>
-                                <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
-                            </picture>
-                            <p>NUEVO</p>
-                        </div>
-                        <div>
-                            <p class="hero_collec">HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
-                            <p class="hero_price">$ 1799,99</p>
-                            <p class="hero_cuotas">3 CUOTAS SIN INTERES</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="glide__slide sldr-item">
-                    <article>
-                        <a href="/pages/productos/luna.html">
-                            <div class="hero_img">
-                                <picture>
-                                    <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
-                                </picture>
-                                <p>NUEVO</p>
-                            </div>
-                            <div>
-                                <p class="hero_collec">HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p class="hero_price">$ 1799,99</p>
-                                <p class="hero_cuotas">3 CUOTAS SIN INTERES</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
-    <!-- <section id="hero-section"> </section> -->
+    <section class="indx-slider contenedor">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+               <ul id="cardContainer" class="glide__slides">
+               </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+               <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                  <iconify-icon icon="akar-icons:arrow-left-thick"></iconify-icon>
+               </button>
+               <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                  <iconify-icon icon="akar-icons:arrow-right-thick"></iconify-icon>
+               </button>
+            </div>
+         </div>
+    </section>
 
     <footer id="footer"></footer>
 
@@ -155,15 +114,6 @@
                 bannerContainer.innerHTML = data;
             });
 
-        // Use JavaScript to load banner.html into the page
-        // fetch("/pages/misc/hero.html")
-        //     .then((response) => response.text())
-        //     .then((data) => {
-        //         const bannerContainer = document.getElementById("hero-section");
-        //         bannerContainer.innerHTML = data;
-        //     });
-
-        // Use JavaScript to load card.html into the page
         // fetch("/pages/misc/card.html")
         //     .then((response) => response.text())
         //     .then((data) => {
@@ -173,7 +123,13 @@
         //         });
         //     });
 
-        // Use JavaScript to load footer.html into the page
+        // fetch("/pages/vs/slider.html")
+        //     .then((response) => response.text())
+        //     .then((data) => {
+        //         const sliderContainer = document.getElementById("slider");
+        //         sliderContainer.innerHTML = data;
+        //     });
+
         fetch("/pages/partials/footer.html")
             .then((response) => response.text())
             .then((data) => {
@@ -181,6 +137,10 @@
                 footerContainer.innerHTML = data;
             });
     </script>
+       <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+       <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+       
+       <script src="/js/vs/slider.js"></script>
 
 </body>
 
