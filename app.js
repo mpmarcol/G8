@@ -1,10 +1,10 @@
 const express = require ('express');
 const app = express();
 
-const mainRoutes = require('./src/routes/mainRoutes');
-const shopRoutes = require('./src/routes/shopRoutes');
-const adminRoutes = require('./src/routes/adminRoutes');
-const authRoutes = require('./src/routes/authRoutes');
+const mainRoutes = require('./src/routes/main.routes');
+const shopRoutes = require('./src/routes/shop.routes');
+const adminRoutes = require('./src/routes/admin.routes');
+const authRoutes = require('./src/routes/auth.routes');
 
 app.use(express.static('public'));
 
