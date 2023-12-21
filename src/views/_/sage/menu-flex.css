@@ -1,0 +1,23 @@
+.menu {
+    display:flex
+}
+
+.menu-item {
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}

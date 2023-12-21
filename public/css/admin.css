@@ -1,0 +1,261 @@
+@import url('./estandar.css');
+@import url('./header-admin.css');
+@import url('./footer-admin.css');
+
+.listado {
+   width: 1440px;
+   padding: 20px 110px;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* height: 100vh; */
+   /* font-family: Arial, sans-serif; */
+}
+
+.list-buscador {
+   width: 1440px;
+   padding: 10px 110px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+
+   font-family: Inter;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.list-bsc-img {
+   width: 42px;
+   margin-left: 20px;
+   background-color: red;
+
+   display: flex;
+   flex-wrap: unset;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+
+   /* text-align:center; */
+}
+
+.list-bsc-inp input::placeholder {
+   padding-left: 4px;
+   color: lightgray;
+}
+
+.list-bsc-inp {
+   margin-left: 8px;
+}
+
+.list-bsc-inp input {
+   border: 1px solid red;
+}
+
+.list-titulo {
+   width: 1440px;
+   padding: 30px 110px 20px;
+
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: space-between;
+   align-items: center;
+
+   /* background-color: darkkhaki; */
+
+   display: flex;
+   flex-direction: row;
+}
+
+.list-titulo h1 {
+   display: flex;
+   margin: 0;
+   padding: 0;
+
+   font-family: Raleway;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 49px;
+   letter-spacing: 0.04em;
+   text-align: right;
+}
+
+.list-ttl-agregar i {
+   transform: scale(1.4);
+   color: #f44336;
+}
+
+.list-ttl-agregar p {
+   margin: 0;
+   padding: 0;
+}
+
+.list-ttl-agregar {
+   width: 200px;
+   line-height: 100%;
+
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: space-between;
+   align-items: center;
+
+   font-family: Inter;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 29px;
+   letter-spacing: 0.04em;
+   text-align: right;
+}
+
+/* Tabla del Listado  */
+.dataTable {
+   width: 1440px;
+   margin: 0;
+   padding: 0 110px;
+
+   display: flex;
+   flex-direction: column;
+   /* flex-wrap: unset; */
+   /* align-items: center; */
+   /* align-content: center; */
+   /* justify-content: center; */
+
+   /* border: 1px solid #ddd; */
+   /* border-collapse: collapse; */
+
+   font-family: Inter;
+   /* font-size: 24px; */
+   font-weight: 700;
+   line-height: 29px;
+   letter-spacing: 0.04em;
+   text-align: right;
+}
+
+thead {
+   width: 1220px;
+   /* padding: 0 40px; */
+   padding: 0;
+   margin: 0;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-items: center;
+   justify-content: space-between;
+}
+
+thead tr {
+   width: 100%;
+   /* padding: 0 20px; */
+   
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-items: center;
+   justify-content: space-between;
+   
+   background-color: #e8a4a4;
+   border-bottom: 1px solid #ddd;
+}
+
+tbody {
+   width: 1220px;
+   /* padding: 0 40px; */
+   margin: 0;
+}
+
+th,
+td {
+   height: 56px;
+   padding: 4px 8px;
+   margin: 0;
+   text-align: left;
+}
+
+tr {
+   width: 100%;
+   margin: 0;
+
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-items: center;
+   justify-content: space-between;
+   background-color: white;
+}
+
+tr:nth-child(even) {
+   background-color: #eee;
+}
+
+.lst-tab-col1,
+.lst-tab-col5,
+.lst-tab-col6 {
+   width: 72px;
+   /* min-width: 100%; */
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+   /* padding: 20px; */
+   /* margin-left: 40px; */
+}
+
+.lst-tab-col2,
+.lst-tab-col3,
+.lst-tab-col4 {
+   /* width: 72px; */
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+   /* padding: 20px; */
+   /* margin-left: 40px; */
+}
+
+.lst-tab-col2 {
+   width: 152px;
+   /* margin-left: 40px; */
+}
+
+.lst-tab-col3 {
+   width: 328px;
+   /* margin-left: 40px; */
+}
+
+.lst-tab-col4 {
+   width: 208px;
+   /* margin-left: 40px; */
+}
+
+.action-buttons {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.edit-icon,
+.erase-icon {
+   /* margin: 0 5px; */
+   padding: 5px 10px;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+.edit-icon {
+   background-color: #4CAF50;
+   /* width: 100%; */
+}
+
+.erase-icon {
+   background-color: #f44336;
+}

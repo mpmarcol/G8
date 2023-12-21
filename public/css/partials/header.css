@@ -44,10 +44,10 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  align-content: center;
 
   list-style-type: none;
-
-  justify-content: space-between;
 }
 
 .hd_menu_li li {
@@ -58,4 +58,51 @@ header {
   font-family: Raleway;
   font-size: 20px;
   line-height: 120%;
+}
+
+.submenu:hover .with-icon  {
+  /* transform: rotate(-90deg); */
+}
+
+.submenu {
+  display: none;
+  width: 250px;
+  position: absolute;
+  z-index: 10;
+}
+
+.with-submenu .with-icon {
+  transition: transform 0.3s;
+}
+
+/* .with-submenu:hover .with-icon {
+  transform: rotate(-90deg);
+} */
+
+.with-submenu.expanded .with-icon {
+  transform: rotate(0);
+}
+
+.navbar__item {
+  margin-right: 10px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.with-submenu:hover .submenu {
+  display: block;
+  background-color: red;
+  .submenu__item {
+    margin-bottom: 6px;
+  }
 }

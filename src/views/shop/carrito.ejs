@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNKOSHOP - CARRITO</title>
+</head>
+
+<body>
+    <!-- === HEADER === -->
+    <!-- <header>
+        <nav>
+            <div class="hd_img">
+                <picture>
+                    <a href="./home.html">
+                        <img src="../img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop" />
+                    </a>
+                </picture>
+            </div>
+            <div class="hd_menu">
+                <ul class="hd_menu_li">
+                    <li>
+                        <a href="../pages/shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">CONTACTO</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+
+    <%- include('../partials/header.ejs') %>
+
+    <section>
+        <h2>CARRITO DE COMPRAS</h2>
+        <div class="titulo">
+            <p>DETALLE DE PRODUCTO</p>
+            <p>CANTIDAD</p>
+            <p>TOTAL</p>
+        </div>
+
+        <!-- === PRODUCTO 1 === -->
+        <div class="prodPedidos">
+            <picture>
+                <img src="../img/star-wars/baby-yoda-1.webp" alt="baby yoda">
+            </picture>
+            <div class="ped_detalles">
+                <h4>BABY YODA BLUEBALL</h4>
+                <p>STAR WARS</p>
+                <p>precio: $1799,99</p>
+            </div>
+            <div class="ped_cant">
+                <input type="text">2
+                <div class="adders">
+                    <a href="">+</a>
+                    <a href="">-</a>
+                </div>
+            </div>
+            <div>
+                <p>$ 3599,98</p>
+            </div>
+            <div>
+                <button>X</button>
+            </div>
+        </div>
+
+        <!-- === PRODUCTO 2 === -->
+        <div class="prodPedidos">
+            <picture>
+                <img src="../img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
+            </picture>
+
+            <div class="ped_detalles">
+                <h4>PIDGEOTTO</h4>
+                <p>POKEMON</p>
+                <p>precio: $1799,99</p>
+            </div>
+            <div class="ped_cant">
+                <input type="text">
+                <div class="adders">
+                    <a href="">+</a>
+                    <a href="">-</a>
+                </div>
+            </div>
+            <div>
+                <p>$ 1799,99</p>
+            </div>
+            <div>
+                <button>X</button>
+            </div>
+        </div>
+
+    </section>
+
+    <banner>
+        <h2>NO TE PIERDAS..</h2>
+        <ul>
+            <li>
+                <article>
+                    <a href="./pages/productos/trooper.html">
+                        <div>
+                            <picture>
+                                <img src="./img/cards/trooper-1.png" alt="STORMTROOPER">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div>
+                            <p>STAR WARS</p>
+                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <p>$ 1799,99</p>
+                            <p>3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <a href="./pages/productos/pidgeotto.html">
+                        <div>
+                            <picture>
+                                <img src="./img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div>
+                            <p>POKEMON</p>
+                            <h4>PIDGEOTTO</h4>
+                            <p>$ 1799,99</p>
+                            <p>3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <a href="./pages/productos/luna.html">
+                        <div>
+                            <picture>
+                                <img src="./img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div>
+                            <p>HARRY POTTER</p>
+                            <h4>LUNA LOVEGOOD LION MASK</h4>
+                            <p>$ 1799,99</p>
+                            <p>3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+
+        </ul>
+    </banner>
+
+    <section>
+        <h2>RESUMEN</h2>
+
+        <div class="izquierda">
+            <p>CANTIDAD DE ELEMENTOS</p>
+            <p>SUBTOTAL</p>
+            <p>ENVIO</p>
+            <p>TOTAL</p>
+        </div>
+        <div class="derecha">
+            <p>3</p>
+            <p>$ 5399,97</p>
+            <p>$ 0,00</p>
+            <p>$ 5399,97</p>
+        </div>
+        <button>
+            IR A PAGAR
+        </button>
+
+    </section>
+
+    <!-- <footer>
+        <section>
+            <div>
+                <ul>
+                    <li><a href="../pages/shop.html">SHOP</a></li>
+                    <li><a href="../pages/login.html">INGRESAR</a></li>
+                    <li><a href="../pages/contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="">
+            </picture>
+
+        </section>
+        <p>All rights reserved 2023 &copy;Funkoshop</p>
+    </footer> -->
+    
+    <%- include('../partials/footer') %>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNKOSHOP - SHOP</title>
+    <link rel="stylesheet" href="/css/pages/shop.css">
+</head>
+
+<body>
+
+    <!-- <header id="header">    </header> -->
+
+    <%- include('../partials/header') %>
+
+        <!-- === ASIDE === -->
+        <div class="cuerpo contenedor">
+            <aside class="sidebar">
+                <div class="side_buscar">
+                    <h3>BUSCAR</h3>
+                    <input type="text" placeholder="Ingrese su búsqueda">
+                </div>
+                <div class="side_ordenar">
+                    <h3>ORDENAR POR</h3>
+                    <select name="" id="seleccion" class="seleccion">
+                        <option value="alfabetico">ALFABETICO</option>
+                        <option value="colecciones">COLECCIONES</option>
+                        <option value="menorPrecio">MENOR PRECIO</option>
+                        <option value="mayorPrecio">MAYOR PRECIO</option>
+                    </select>
+                </div>
+                <div class="side_precio">
+                    <h3>PRECIO</h3>
+                    <div class="side_prc_minmax">
+                        <div class="side_prc_input">
+                            <h4>MIN</h4> <input type="text" placeholder="Min">
+                        </div>
+                        <div class="side_prc_input">
+                            <h4>MAX</h4> <input type="text" placeholder="Max">
+                        </div>
+                    </div>
+                </div>
+                <div class="side_filtrar">
+                    <h3>FILTRAR</h3>
+                    <div class="side_chkb">
+                        <label><input type="checkbox" name="nuevos" id="nuevos">NUEVOS</label>
+                        <label><input type="checkbox" name="ofertas" id="ofertas">OFERTAS</label>
+                        <label><input type="checkbox" name="especial" id="especial">EDICION ESPECIAL</label>
+                        <label><input type="checkbox" name="favoritos" id="favoritos">FAVORITOS</label>
+                    </div>
+                </div>
+                </form>
+            </aside>
+
+            <!-- === MAIN === -->
+            <main>
+                <div>
+                    <ul class="card3">
+                        <li class="card_item">
+                            <a href="/pages/productos/trooper.html">
+                                <div class="card_img">
+                                    <picture>
+                                        <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
+                                    </picture>
+                                    <p>NUEVO</p>
+                                </div>
+                                <div class="card_texts">
+                                    <p class="card_collec">STAR WARS</p>
+                                    <h4>STORMTROOPER LIGHTSABER</h4>
+                                    <div class="costos">
+                                        <p class="card_price">$ 1799,99</p>
+                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="/pages/productos/pidgeotto.html">
+                                <div class="card_img">
+                                    <picture>
+                                        <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                                    </picture>
+                                    <p>NUEVO</p>
+                                </div>
+                                <div class="card_texts">
+                                    <p class="card_collec">POKEMON</p>
+                                    <h4>PIDGEOTTO</h4>
+                                    <div class="costos">
+                                        <p class="card_price">$ 1799,99</p>
+                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="/pages/productos/luna.html">
+                                <div class="card_img">
+                                    <picture>
+                                        <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                                    </picture>
+                                    <p>NUEVO</p>
+                                </div>
+                                <div class="card_texts">
+                                    <p class="card_collec">HARRY POTTER</p>
+                                    <h4>LUNA LOVEGOOD <br> LION MASK</h4>
+                                    <div class="costos">
+                                        <p class="card_price">$ 1799,99</p>
+                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="card3">
+                        <li class="card_item">
+                            <a href="/pages/productos/trooper.html">
+                                <div class="card_img">
+                                    <picture>
+                                        <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
+                                    </picture>
+                                    <p>NUEVO</p>
+                                </div>
+                                <div class="card_texts">
+                                    <p class="card_collec">STAR WARS</p>
+                                    <h4>STORMTROOPER LIGHTSABER</h4>
+                                    <div class="costos">
+                                        <p class="card_price">$ 1799,99</p>
+                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="/pages/productos/pidgeotto.html">
+                                <div class="card_img">
+                                    <picture>
+                                        <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                                    </picture>
+                                    <p>NUEVO</p>
+                                </div>
+                                <div class="card_texts">
+                                    <p class="card_collec">POKEMON</p>
+                                    <h4>PIDGEOTTO</h4>
+                                    <div class="costos">
+                                        <p class="card_price">$ 1799,99</p>
+                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="/pages/productos/luna.html">
+                                <div class="card_img">
+                                    <picture>
+                                        <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                                    </picture>
+                                    <p>NUEVO</p>
+                                </div>
+                                <div class="card_texts">
+                                    <p class="card_collec">HARRY POTTER</p>
+                                    <h4>LUNA LOVEGOOD <br> LION MASK</h4>
+                                    <div class="costos">
+                                        <p class="card_price">$ 1799,99</p>
+                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pageSelector">
+                    <a href="">
+                        << /a>
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <a href="">..</a>
+                            <a href="">9</a>
+                            <a href="">10</a>
+                            <a href="">></a>
+                </div>
+            </main>
+        </div>
+
+        <footer id="footer"> </footer>
+        
+    <%- include('../partials/header') %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+        <script>
+            // Uso de JavaScript para cargar header.html en la pagina
+            fetch("/pages/partials/header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    const headerContainer = document.getElementById("header");
+                    headerContainer.innerHTML = data;
+                });
+
+            // Uso de JavaScript para cargar banner.html en la pagina
+            // fetch("../pages/banner.html")
+            //     .then((response) => response.text())
+            //     .then((data) => {
+            //         const headerContainer = document.getElementById("banner");
+            //         headerContainer.innerHTML = data;
+            //     });
+
+            // Uso de JavaScript para cargar footer.html en la pagina
+            fetch("/pages/partials/footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    const headerContainer = document.getElementById("footer");
+                    headerContainer.innerHTML = data;
+                });
+        </script>
+
+</body>
+
+</html>

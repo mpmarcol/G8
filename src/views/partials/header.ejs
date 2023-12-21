@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funkoshop</title>
+    <link rel="stylesheet" href="/css/partials/header.css">
+</head>
+
+<body>
+    <header class="">
+        <nav class="header contenedor">
+            <div class="hd_logo">
+                <picture>
+                    <a href="home">
+                        <img src="/img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop" />
+                    </a>
+                </picture>
+            </div>
+            <div class="hd_menu">
+                <ul class="hd_menu_li">
+                    <li class="navbar__item with-submenu">
+                        <a href="/shop" class="navbar__link with-icon">SHOP <iconify-icon icon="octicon:chevron-up-12"></iconify-icon>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="/shop?filter=funkos" class="submenu__link">Funkos</a></li>
+                            <li class="submenu__item"><a href="/shop?filter=remeras" class="submenu__link">Remeras</a></li>
+                            <li class="submenu__item"><a href="shop?filter=llaveros" class="submenu__link">Llaveros</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="shop">SHOP</a>
+                    </li> -->
+                    <li>
+                        <a href="contact">CONTACTO</a>
+                    </li>
+                    <li>
+                        <a href="auth/login">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="shop/cart">
+                            <img src="/img/icons/cart-icon.svg" alt="icono de carrito">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        // Get the elements
+        const submenuParent = document.querySelector('.with-submenu');
+        const submenu = submenuParent.querySelector('.submenu');
+        const icon = submenuParent.querySelector('.iconify');
+
+        // Initial state
+        let isExpanded = false;
+
+        // Function to toggle the submenu
+        function toggleSubmenu() {
+            isExpanded = !isExpanded;
+            submenu.style.display = isExpanded ? 'block' : 'none';
+            submenuParent.classList.toggle('collapsed', !isExpanded);
+            submenuParent.classList.toggle('expanded', isExpanded);
+        }
+
+        // Add click event listener
+        submenuParent.addEventListener('click', toggleSubmenu);
+    </script>
+</body>
+
+</html>
