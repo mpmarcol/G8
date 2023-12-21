@@ -57,122 +57,130 @@
             <main>
                 <div>
                     <ul class="card3">
-                        <li class="card_item">
-                            <a href="/pages/productos/trooper.html">
-                                <div class="card_img">
-                                    <picture>
-                                        <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
-                                    </picture>
-                                    <p>NUEVO</p>
-                                </div>
-                                <div class="card_texts">
-                                    <p class="card_collec">STAR WARS</p>
-                                    <h4>STORMTROOPER LIGHTSABER</h4>
-                                    <div class="costos">
-                                        <p class="card_price">$ 1799,99</p>
-                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                        <% data.forEach ( card => { %>
+                            <li class="card_item">
+                                <a href="shop/item/<%= card.product_id %> ">
+                                    <div class="card_img">
+                                        <picture>
+                                            <!-- <img src="/img/cards/trooper-1.png" alt="STORMTROOPER"> -->
+                                            <img 
+                                                class="card-item__img--front" 
+                                                src="<%= card.img_front %>" 
+                                                alt="<%= card.product_description %>" >
+                                            <!-- <img src="<% card.img_back %>" alt="" class="card-item__img--back"> -->
+                                        </picture>
+                                        <p>NUEVO</p>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="card_item">
-                            <a href="/pages/productos/pidgeotto.html">
-                                <div class="card_img">
-                                    <picture>
-                                        <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
-                                    </picture>
-                                    <p>NUEVO</p>
-                                </div>
-                                <div class="card_texts">
-                                    <p class="card_collec">POKEMON</p>
-                                    <h4>PIDGEOTTO</h4>
-                                    <div class="costos">
-                                        <p class="card_price">$ 1799,99</p>
-                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                                    <div class="card_texts">
+                                        <p class="card_collec"><%= card.license_name %></p>
+                                        <h4><%= card.product_name %></h4>
+                                        <div class="costos">
+                                            <p class="card_price">$ <%= card.product_price %></p>
+                                            <p class="card_cuotas"><%= card.dues %> CUOTAS SIN INTERES</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="card_item">
-                            <a href="/pages/productos/luna.html">
-                                <div class="card_img">
-                                    <picture>
-                                        <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
-                                    </picture>
-                                    <p>NUEVO</p>
-                                </div>
-                                <div class="card_texts">
-                                    <p class="card_collec">HARRY POTTER</p>
-                                    <h4>LUNA LOVEGOOD <br> LION MASK</h4>
-                                    <div class="costos">
-                                        <p class="card_price">$ 1799,99</p>
-                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="card3">
-                        <li class="card_item">
-                            <a href="/pages/productos/trooper.html">
-                                <div class="card_img">
-                                    <picture>
-                                        <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
-                                    </picture>
-                                    <p>NUEVO</p>
-                                </div>
-                                <div class="card_texts">
-                                    <p class="card_collec">STAR WARS</p>
-                                    <h4>STORMTROOPER LIGHTSABER</h4>
-                                    <div class="costos">
-                                        <p class="card_price">$ 1799,99</p>
-                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="card_item">
-                            <a href="/pages/productos/pidgeotto.html">
-                                <div class="card_img">
-                                    <picture>
-                                        <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
-                                    </picture>
-                                    <p>NUEVO</p>
-                                </div>
-                                <div class="card_texts">
-                                    <p class="card_collec">POKEMON</p>
-                                    <h4>PIDGEOTTO</h4>
-                                    <div class="costos">
-                                        <p class="card_price">$ 1799,99</p>
-                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="card_item">
-                            <a href="/pages/productos/luna.html">
-                                <div class="card_img">
-                                    <picture>
-                                        <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
-                                    </picture>
-                                    <p>NUEVO</p>
-                                </div>
-                                <div class="card_texts">
-                                    <p class="card_collec">HARRY POTTER</p>
-                                    <h4>LUNA LOVEGOOD <br> LION MASK</h4>
-                                    <div class="costos">
-                                        <p class="card_price">$ 1799,99</p>
-                                        <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
+                         <% }) %>
                     </ul>
                 </div>
 
+                <!-- <li class="card_item">
+                    <a href="/pages/productos/pidgeotto.html">
+                        <div class="card_img">
+                            <picture>
+                                <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div class="card_texts">
+                            <p class="card_collec">POKEMON</p>
+                            <h4>PIDGEOTTO</h4>
+                            <div class="costos">
+                                <p class="card_price">$ 1799,99</p>
+                                <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card_item">
+                    <a href="/pages/productos/luna.html">
+                        <div class="card_img">
+                            <picture>
+                                <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div class="card_texts">
+                            <p class="card_collec">HARRY POTTER</p>
+                            <h4>LUNA LOVEGOOD <br> LION MASK</h4>
+                            <div class="costos">
+                                <p class="card_price">$ 1799,99</p>
+                                <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="card3">
+                <li class="card_item">
+                    <a href="/pages/productos/trooper.html">
+                        <div class="card_img">
+                            <picture>
+                                <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div class="card_texts">
+                            <p class="card_collec">STAR WARS</p>
+                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <div class="costos">
+                                <p class="card_price">$ 1799,99</p>
+                                <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card_item">
+                    <a href="/pages/productos/pidgeotto.html">
+                        <div class="card_img">
+                            <picture>
+                                <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div class="card_texts">
+                            <p class="card_collec">POKEMON</p>
+                            <h4>PIDGEOTTO</h4>
+                            <div class="costos">
+                                <p class="card_price">$ 1799,99</p>
+                                <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card_item">
+                    <a href="/pages/productos/luna.html">
+                        <div class="card_img">
+                            <picture>
+                                <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                            </picture>
+                            <p>NUEVO</p>
+                        </div>
+                        <div class="card_texts">
+                            <p class="card_collec">HARRY POTTER</p>
+                            <h4>LUNA LOVEGOOD <br> LION MASK</h4>
+                            <div class="costos">
+                                <p class="card_price">$ 1799,99</p>
+                                <p class="card_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+
                 <div class="pageSelector">
                     <a href="">
-                        << /a>
+                        < </a>
                             <a href="">1</a>
                             <a href="">2</a>
                             <a href="">..</a>
@@ -183,38 +191,38 @@
             </main>
         </div>
 
-        <footer id="footer"> </footer>
-        
-    <%- include('../partials/header') %>
+        <!-- <footer id="footer"> </footer> -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+        <%- include('../partials/footer') %>
 
-        <script>
-            // Uso de JavaScript para cargar header.html en la pagina
-            fetch("/pages/partials/header.html")
-                .then((response) => response.text())
-                .then((data) => {
-                    const headerContainer = document.getElementById("header");
-                    headerContainer.innerHTML = data;
-                });
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
-            // Uso de JavaScript para cargar banner.html en la pagina
-            // fetch("../pages/banner.html")
-            //     .then((response) => response.text())
-            //     .then((data) => {
-            //         const headerContainer = document.getElementById("banner");
-            //         headerContainer.innerHTML = data;
-            //     });
+            <script>
+                // Uso de JavaScript para cargar header.html en la pagina
+                fetch("/pages/partials/header.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        const headerContainer = document.getElementById("header");
+                        headerContainer.innerHTML = data;
+                    });
 
-            // Uso de JavaScript para cargar footer.html en la pagina
-            fetch("/pages/partials/footer.html")
-                .then((response) => response.text())
-                .then((data) => {
-                    const headerContainer = document.getElementById("footer");
-                    headerContainer.innerHTML = data;
-                });
-        </script>
+                // Uso de JavaScript para cargar banner.html en la pagina
+                // fetch("../pages/banner.html")
+                //     .then((response) => response.text())
+                //     .then((data) => {
+                //         const headerContainer = document.getElementById("banner");
+                //         headerContainer.innerHTML = data;
+                //     });
+
+                // Uso de JavaScript para cargar footer.html en la pagina
+                fetch("/pages/partials/footer.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        const headerContainer = document.getElementById("footer");
+                        headerContainer.innerHTML = data;
+                    });
+            </script>
 
 </body>
 

@@ -6,123 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUNKOSHOP - SHOP</title>
     <link rel="stylesheet" href="/css/pages/item.css">
+    <link rel="stylesheet" href="/css/ext/all.min.css">
+
+    <link rel="stylesheet" href="/css/ext/glide.core.min.css">
+    <link rel="stylesheet" href="/css/ext/glide.theme.min.css">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/vs/slider.css">
 </head>
 
 <body>
-    <header id="header"> </header>
+    <!-- <header id="header"> </header> -->
+    <%- include('../partials/header') %>
 
-    <section class="item">
-        
-        <picture class="item_pict">
-            <img src="/img/star-wars/baby-yoda-1.webp" alt="baby yoda">
-        </picture>
+        <section class="item">
 
-        <article class="item_text">
-            <h4>STAR WARS</h4>
-            <h2>BABY YODA BLUEBALL</h2>
-            <span class="item_desc">
-                Figura coleccionable de Baby Yoda (Grogu)<br>
-                The Mandalorian Saga, edición limitada.
-            </span>
-            <p class="item_prec">$ 1799,99</p>
-            <div class="item_cant">
-                <input class="item_input" type="text" name="quantity" id="quantity" placeholder="0">
-                <div class="item_adder">
-                    <!-- <a id="item-add" href="">+</a> -->
-                    <button id="item-add" class="" type="button">+</button>
-                    <!-- <a id="item-rest" href="">-</a> -->
-                    <button id="item-rest" class="" type="button">-</button>
+            <picture class="item_pict">
+                <!-- <img src="/img/star-wars/baby-yoda-1.webp" alt="baby yoda"> -->
+                <img src=<%=myItem.img_front %>
+                alt= <%= myItem.product_description %> >
+            </picture>
+
+            <article class="item_text">
+                <h4>
+                    <%= myItem.license_name %>
+                </h4>
+                <h2>
+                    <%= myItem.product_name %>
+                </h2>
+                <span class="item_desc">
+                    <%= myItem.extended_prod_descript %>
+                </span>
+                <p class="item_prec">$ <%= myItem.product_price %>
+                </p>
+                <div class="item_cant">
+                    <input class="item_input" type="text" name="quantity" id="quantity" placeholder="0">
+                    <div class="item_adder">
+                        <!-- <a id="item-add" href="">+</a> -->
+                        <button id="item-add" class="" type="button">+</button>
+                        <!-- <a id="item-rest" href="">-</a> -->
+                        <button id="item-rest" class="" type="button">-</button>
+                    </div>
+                    <button>Agregar al Carrito</button>
                 </div>
-                <button>Agregar al Carrito</button>
+                <p class="item_cuot"><a href="">Ver métodos de pago</a> - <%= myItem.dues %> CUOTAS SIN INTERES</p>
+            </article>
+        </section>
+
+        <!-- <section class="hero contenedor">
+            <h2>PRODUCTOS RELACIONADOS</h2>
+            <ul>
+                <li>
+                    <article>
+                        <a href="/pages/productos/trooper.html">
+                            <div class="her_img">
+                                <picture>
+                                    <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
+                                </picture>
+                                <p>NUEVO</p>
+                            </div>
+                            <div>
+                                <p class="her_collec">STAR WARS</p>
+                                <h4>STORMTROOPER LIGHTSABER</h4>
+                                <p class="her_price">$ 1799,99</p>
+                                <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <a href="/pages/productos/pidgeotto.html">
+                            <div class="her_img">
+                                <picture>
+                                    <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
+                                </picture>
+                                <p>NUEVO</p>
+                            </div>
+                            <div>
+                                <p class="her_collec">POKEMON</p>
+                                <h4>PIDGEOTTO</h4>
+                                <p class="her_price">$ 1799,99</p>
+                                <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <a href="/pages/productos/luna.html">
+                            <div class="her_img">
+                                <picture>
+                                    <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
+                                </picture>
+                                <p>NUEVO</p>
+                            </div>
+                            <div>
+                                <p class="her_collec">HARRY POTTER</p>
+                                <h4>LUNA LOVEGOOD LION MASK</h4>
+                                <p class="her_price">$ 1799,99</p>
+                                <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+
+            </ul>
+        </section> -->
+
+        <section class="indx-slider contenedor">
+            <h2>NUEVOS INGRESOS</h2>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul id="cardContainer" class="glide__slides">
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <iconify-icon icon="akar-icons:arrow-left-thick"></iconify-icon>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <iconify-icon icon="akar-icons:arrow-right-thick"></iconify-icon>
+                    </button>
+                </div>
             </div>
-            <p class="item_cuot"><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERES</p>
-        </article>
-    </section>
+        </section>
 
-    <section class="hero contenedor">
-        <h2>PRODUCTOS RELACIONADOS</h2>
-        <ul>
-            <li>
-                <article>
-                    <a href="/pages/productos/trooper.html">
-                        <div class="her_img">
-                            <picture>
-                                <img src="/img/cards/trooper-1.png" alt="STORMTROOPER">
-                            </picture>
-                            <p>NUEVO</p>
-                        </div>
-                        <div>
-                            <p class="her_collec">STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p class="her_price">$ 1799,99</p>
-                            <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+        <!-- <footer id="footer"></footer> -->
 
-            <li>
-                <article>
-                    <a href="/pages/productos/pidgeotto.html">
-                        <div class="her_img">
-                            <picture>
-                                <img src="/img/cards/pidgeotto-1.png" alt="PIDGEOTTO">
-                            </picture>
-                            <p>NUEVO</p>
-                        </div>
-                        <div>
-                            <p class="her_collec">POKEMON</p>
-                            <h4>PIDGEOTTO</h4>
-                            <p class="her_price">$ 1799,99</p>
-                            <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+        <%- include('../partials/footer') %>
 
-            <li>
-                <article>
-                    <a href="/pages/productos/luna.html">
-                        <div class="her_img">
-                            <picture>
-                                <img src="/img/cards/luna-1.png" alt="LUNA LOVEGOOD">
-                            </picture>
-                            <p>NUEVO</p>
-                        </div>
-                        <div>
-                            <p class="her_collec">HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
-                            <p class="her_price">$ 1799,99</p>
-                            <p class="her_cuotas">3 CUOTAS SIN INTERES</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+            <script src="/js/item.js"></script>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+            <script src="/js/ext/all.min.js"></script>
 
-        </ul>
-    </section>
+            <script>
+                fetch("/pages/partials/header.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        const headerContainer = document.getElementById("header");
+                        headerContainer.innerHTML = data;
+                    });
 
-    <footer id="footer"></footer>
+                fetch("/pages/partials/footer.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        const footerContainer = document.getElementById("footer");
+                        footerContainer.innerHTML = data;
+                    });
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+            <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-    <script src="/js/item.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="/js/ext/all.min.js"></script>
-
-    <script>
-        fetch("/pages/partials/header.html")
-            .then((response) => response.text())
-            .then((data) => {
-                const headerContainer = document.getElementById("header");
-                headerContainer.innerHTML = data;
-            });
-        
-        fetch("/pages/partials/footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-                const footerContainer = document.getElementById("footer");
-                footerContainer.innerHTML = data;
-            });
-    </script>
+            <script src="/js/vs/slider.js"></script>
 </body>
 
 </html>
